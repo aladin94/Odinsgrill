@@ -1,0 +1,15 @@
+{
+  "name": "odingrill",
+  "version": "1.0.0",
+  "description": "demo project.",
+  "scripts": {
+    "start": "npm run start",
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "lite-server": "^1.3.1"
+  }
+}

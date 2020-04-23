@@ -1,0 +1,281 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icon.png">
+  <script src="https://kit.fontawesome.com/c8a96085e3.js" crossorigin="anonymous"></script>
+  <title>Odinsgrill</title>
+  <style>
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 300px;
+      width: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">>
+      <div>
+        <div>
+          <ul>
+            <li><a onclick="toggle()" href="#Home">Home</a></li>
+            <li><a onclick="toggle()" href="#About">About</a></li>
+            <li><a onclick="toggle()" href="#Menu">Menu</a></li>
+            <li><a onclick="toggle()" href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="showcase" id="Home">
+    <div class="container showcase-inner">
+      <h1>Odin's Grill</h1>
+      <h2>The Best Hamburgers in Sweden!</h2>
+      <a href="#About" class="btn">Read More</a>
+    </div>
+  </header>
+
+  <section class="about" id="About">
+    <img src="images/logo.png" class="logo">
+    <h1 class="heading1">ODINS GRILL</h1>
+    <h1 class="heading2">Burgers, Fries &amp; Shakes</h1>
+    <p class="aboutparagraph">At Odins Grill, you will find the best and freshest burgers in town. We grind our meat
+      fresh everyday and produce our patties ourselves in-house. We do not use any pre-made or frozen products. Our buns
+      are freshly baked every day by us. We use ingredients from regional suppliers that we know
+      personally. Vegan options available&#42;&#42;&#42;</p>
+    <a href="#Menu" class="btn menu-btn">Menu</a>
+  </section>
+
+  <section class="menu-page" id="Menu">
+    <div class="TitleWrapper">
+      <h1 class="title">Menu</h1>
+    </div>
+    <div class="menu-list">
+
+      <div class="product">
+        <div class="imgwrapper">
+          <img src="images/burger.jpg" alt="Burger" class="food-image">
+        </div>
+        <div class="text">
+          <div class="product-content">
+            <h3 class="name">Burgers</h3>
+            <h3 class="price">10 &euro;</h3>
+          </div>
+          <div class="ptags">
+            <p class="allergens">Allergens:</p>
+            <p class="info">Milk, Gluten</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="imgwrapper">
+          <img src="images/fries.jpg" alt="Fries" class="food-image">
+        </div>
+        <div class="text">
+          <div class="product-content">
+            <h3 class="name">Fries</h3>
+            <h3 class="price">5 &euro;</h3>
+          </div>
+          <div class="ptags">
+            <p class="allergens">Allergens:</p>
+            <p class="info">Potatoes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="imgwrapper">
+          <img src="images/milkshake.jpg" alt="Shake" class="food-image">
+        </div>
+        <div class="text">
+          <div class="product-content">
+            <h3 class="name">Milkshake</h3>
+            <h3 class="price">6 &euro;</h3>
+          </div>
+          <div class="ptags">
+            <p class="allergens">Allergens:</p>
+            <p class="info">Milk</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="imgwrapper">
+          <img src="images/salad.jpg" alt="Salad" class="food-image">
+        </div>
+        <div class="text">
+          <div class="product-content">
+            <h3 class="name">Salad</h3>
+            <h3 class="price">8 &euro;</h3>
+          </div>
+          <div class="ptags">
+            <p class="allergens">Allergens:</p>
+            <p class="info">Chicken</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="imgwrapper">
+          <img src="images/steak.jpg" alt="steak" class="food-image">
+        </div>
+        <div class="text">
+          <div class="product-content">
+            <h3 class="name">steak</h3>
+            <h3 class="price">20 &euro;</h3>
+          </div>
+          <div class="ptags">
+            <p class="allergens">Allergens:</p>
+            <p class="info">Beef</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="imgwrapper">
+          <img src="images/pancakes.jpg" alt="Pancakes" class="food-image">
+        </div>
+        <div class="text">
+          <div class="product-content">
+            <h3 class="name">Pancakes</h3>
+            <h3 class="price">9 &euro;</h3>
+          </div>
+          <div class="ptags">
+            <p class="allergens">Allergens:</p>
+            <p class="info">Milk</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="Contact">
+    <div class="contact-form">
+      <h1 class="contact-heading">Contact Us</h1>
+      <p class="contact-ptag">Leave a message</p>
+      <form name="contactform" method="POST" class="form1">
+        <input type="text" name="name" placeholder="Name" class="namebox">
+        <input type="text" name="email" placeholder="Email" class="emailbox">
+        <textarea name="comments" maxlength="1000" cols="20" rows="5" placeholder="Leave your message here"
+          class="commentbox"></textarea>
+        <button type="submit" class="submitbutton">Send Message</button>
+      </form>
+    </div>
+
+    <div class="information">
+      <div class="info-container">
+        <div id="map">
+        </div>
+        <section class="storeinfo">
+          <div class="storeinfobox">
+            <div class="storeleftcolumn">
+              
+              <div class="addressbox">
+                <div class="icon-box">
+                  <div class="grid-container">
+                    <i class="fas fa-map-marker-alt fa-4x"></i>
+                    <div class="box-content">
+                      <h3 class="box-content-title">Address</h3>
+                      <p class="box-content-ptag">Gothenburg, Sweden</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="addressbox">
+                <div class="icon-box">
+                  <div class="grid-container">
+                    <i class="fas fa-phone-alt fa-4x"></i>
+                    <div class="box-content">
+                      <h3 class="box-content-title">Phone</h3>
+                      <p class="box-content-ptag">031-15-02-92</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="storerightcolumn">
+              <div class="addressbox">
+                <div class="icon-box">
+                  <div class="grid-container">
+                    <i class="far fa-clock fa-4x"></i>
+                    <div class="box-content">
+                      <h3 class="box-content-title">Hours</h3>
+                      <p class="box-content-ptag">Monday - Thursday 10AM - 12AM</p>
+                      <p class="box-content-ptag">Friday - Saturday: 10AM - 4AM</p>
+                      <p class="box-content-ptag">Sunday: CLOSED</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+  </section>
+  </div>
+
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="images/logo.png">
+      </div>
+
+      <div class="footer-middle">
+        <p class="footer-store-name">Odins Parkgrill</p>
+        <p>Odinsplaten 11, 411 02 Gothenburg</p>
+        <p>#: 031-15-02-92</p>
+        <p class="copyright">&copy; Aladin Feratovic | alferatovic.com</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="social-links">
+          <a class="social-icon" href="https://www.facebook.com/odinsparkgrill/">
+            <span>
+              <i class="fa fa-facebook fa-4x"></i>
+            </span>
+          </a>
+
+          <a class="social-icon" href="https://www.instagram.com/odinsparkgrill/?hl=sv">
+            <span>
+              <i class="fa fa-instagram fa-4x"></i>
+            </span>
+          </a>
+
+          <a class="social-icon"
+            href="https://www.tripadvisor.se/Restaurant_Review-g189894-d9708382-Reviews-Odins_Parkgrill-Gothenburg_Vastra_Gotaland_County_West_Coast.html">
+            <span>
+              <i class="fa fa-tripadvisor fa-4x"></i>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="index.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_mj15Q3s6uuKjKCWfUwfKafYpgfd_89A&callback=initMap">
+    </script>
+</body>
+
+</html>
